@@ -7,14 +7,17 @@
     "build": "webpack --config webpack/webpack.prod.js",
     "clean": "rimraf dist",
     "test": "npx jest",
-    "style": "prettier --write \"src/**/*.{ts,tsx}\""
+    "style": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "make:crx": "npx crx3 ./dist --keyPath ./dist.pem"
   },
   "author": "Kabuswe Mulenga",
   "license": "MIT",
   "repository": {
     "type": "git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "crx3": "^1.1.3"
+  },
   "devDependencies": {
     "@types/chrome": "0.0.158",
     "copy-webpack-plugin": "^9.0.1",
