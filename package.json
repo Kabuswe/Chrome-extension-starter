@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "test": "npx jest",
     "style": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "make:crx": "npx crx3 ./dist --keyPath ./dist.pem"
+    "make:crx": "npx crx3 -p -o -x -z token-cleanup.zip dist"
   },
   "author": "Kabuswe Mulenga",
   "license": "MIT",
