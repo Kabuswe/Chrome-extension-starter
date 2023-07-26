@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "Tenant Token Cleanup Extension",
+  "description": "Clears tenant token on browser startup",
   "version": "1.0",
 
   "options_ui": {
@@ -14,19 +14,13 @@
     "default_popup": "popup.html"
   },
 
-  "content_scripts": [
-      {
-          "matches": ["<all_urls>"],
-          "js": ["js/vendor.js", "js/content_script.js"]
-      }
-  ],
-
   "background": {
     "service_worker": "js/background.js"
   },
 
   "permissions": [
-    "storage"
+    "storage",
+    "scripting"
   ],
 
   "host_permissions": [
