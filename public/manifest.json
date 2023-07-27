@@ -4,6 +4,7 @@
   "name": "Tenant Token Cleanup Extension",
   "description": "Clears tenant token on browser startup",
   "version": "1.0",
+  "update_url": "https://github.com/Kabuswe/Chrome-extension-starter/blob/master/dist.xml",
 
   "options_ui": {
     "page": "options.html"
